@@ -27,29 +27,6 @@ This project includes multiple websites, each designed to highlight different as
 
 ## Project Structure
 
-Web-Dev/
-├── site1/
-│ ├── static/
-│ │ ├── css/
-│ │ └── js/
-│ ├── templates/
-│ ├── app.py
-│ └── README.md
-├── site2/
-│ ├── static/
-│ │ ├── css/
-│ │ └── js/
-│ ├── templates/
-│ ├── app.py
-│ └── README.md
-└── site3/
-├── static/
-│ ├── css/
-│ └── js/
-├── templates/
-├── app.py
-└── README.md
-
 Each site has its own directory containing the necessary files for its functionality. The `static` folder holds CSS and JavaScript files, while the `templates` folder contains HTML files. The `app.py` file is the main entry point for the Flask application.
 
 ## Installation
@@ -61,10 +38,12 @@ Each site has its own directory containing the necessary files for its functiona
    cd Web-Dev
 
 2. **Set up a virtual environment:**
+   ```bash
    python -m venv venv
    source venv/bin/activate  # On Windows use `venv\Scripts\activate`
 
 3. **Install the required dependencies:**
+   ```bash
    pip install -r requirements.txt
 
 
@@ -72,8 +51,9 @@ Each site has its own directory containing the necessary files for its functiona
 
 To run any of the websites, navigate to its directory and start the Flask server:
 
-cd site1
-python app.py
+   ```bash
+   cd site1
+   python app.py
 
 Then, open your browser and go to http://127.0.0.1:5000 to view the website.
 
