@@ -54,6 +54,7 @@ To run any of the websites, navigate to its directory and start the Flask server
    ```bash
    cd site1
    python app.py
+   ```
 
 Then, open your browser and go to http://127.0.0.1:5000 to view the website.
 
