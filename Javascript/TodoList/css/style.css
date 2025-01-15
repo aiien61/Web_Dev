@@ -1,0 +1,68 @@
+body {
+    background-color: #00c787;
+    display: flex;
+    justify-content: center;
+}
+
+.panel {
+    background-color: white;
+    width: 300px;
+    padding: 30px;
+    margin-top: 50px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.inputarea {
+    display: flex;
+    border-radius: 25px;
+    /* 隱藏圓角以外的地方 */
+    overflow: hidden;
+}
+
+.textarea {
+    flex-grow: 1;
+    border: none;
+    background-color: #F0F4F8;
+    padding: 10px 15px;
+    outline: none;
+}
+
+.btn {
+    background-color: #00c787;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.itemlist {
+    /* 移除清單的黑點 */
+    list-style-type: none;
+    padding: 0;
+}
+
+.itemlist li {
+    display: flex;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.itemlist label {
+    flex-grow: 1;
+}
+
+.checkbox {
+    margin-right: 15px;
+}
+
+.bin {
+    background: none;
+    border: none;
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.bin:hover {
+    opacity: 1;
+}
