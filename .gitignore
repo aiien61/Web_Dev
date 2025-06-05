@@ -1,5 +1,7 @@
 *.txt
 node_modules/
 *.json
-*.png
+goal.png
+goal1.png
+goal2.png
 demo.html
