@@ -1,1 +1,24 @@
-/* Write your code here: */
+/* group selectors */
+h1, h2 {
+    color: blueviolet;
+}
+
+/* select direct childs */
+.box > p {
+    color: firebrick;
+}
+
+/* select descendants */
+.list li {
+    color: blue;
+}
+
+/* chaining: apply where all selects are true */
+li.done {
+    color: seagreen;
+}
+
+/* combine combiners */
+ul p.done {
+    font-size: 0.5rem;
+}
