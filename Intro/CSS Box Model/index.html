@@ -2,48 +2,42 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <title>CSS Box Model</title>
-  <style>
-    /* Write the CSS code here */
-    div {
-      height: 200px;
-      width: 200px;
-      border: solid black;
-    }
+    <meta charset="UTF-8">
+    <title>CSS Box Model</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            border: 10px solid black;
+        }
 
-    p {
-      margin: 0px;
-    }
+        #first {
+            padding: 20px;
+            background-color: cadetblue;
+        }
 
-    #first {
-      background-color: cadetblue;
-      padding: 20px;
-      border-width: 10px;
-      margin: 0px;
-    }
+        #second {
+            margin-left: 260px;
+            background-color: gold;
 
-    #second {
-      background-color: gold;
-      border-width: 20px 10px;
-      margin-left: 260px;
-    }
+        }
 
-    #third {
-      background-color: indianred;
-      border-width: 10px;
-      margin-left: 40px;
-    }
+        #third {
+            margin-left: 40px;
+            background-color: indianred;
+        }
 
+        p {
+            margin: 0;
+        }
 
-  </style>
+    </style>
 </head>
 
 <body>
 
 
-
-  <!-- TODOs:
+<!-- TODOs:
 1. Create 3 Boxes using the div element.
 2. Set their sizes to 200px heigh by 200px wide.
 3. Set different background colors for each of the boxes (I used cadetblue, gold and indianred).
@@ -59,13 +53,13 @@ Hint: Use the CSS inspector in Chrome.
 9. Set the margins for the divs so that each box corner touches the other. (See the goal image)
 -->
 
-  <div id="first">
+<div id="first">
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at sapien porttitor urna elementum lacinia. In
     id magna pulvinar, ultricies lorem id, vehicula elit. Aliquam eu luctus nisl, vitae pellentesque magna. Phasellus
     dolor metus, laoreet ac convallis sit amet, efficitur sed dolor.</p>
-  </div>
-  <div id="second"></div>
-  <div id="third"></div>
+</div>
+<div id="second"></div>
+<div id="third"></div>
 
 </body>
 
