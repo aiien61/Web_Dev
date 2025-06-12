@@ -1,15 +1,12 @@
 /* Don't change the existing CSS. */
-#outer-box {
-  background-color: purple;
-}
 
 .box {
   background-color: blue;
   padding: 10px;
 }
 
-.inner-box {
-  background-color: red;
+#outer-box {
+  background-color: purple;
 }
 
 p {
@@ -20,4 +17,8 @@ p {
 
 .white-text {
   color: white;
+}
+
+.inner-box {
+  background-color: red;
 }
