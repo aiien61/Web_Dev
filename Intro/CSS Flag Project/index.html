@@ -2,72 +2,52 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <title>CSS Flag Project</title>
-  <style>
-    /* Write the CSS Code here */
-    
-    /* red rectangle */
-    .flag {
-      background-color: rgb(206, 17, 38);
-      width: 900px;
-      height: 600px;
-      position: relative;
-    }
-
-    /* blue rectangle */
-    .flag > div {
-      background-color: rgb(0, 40, 104);
-      width: 100%;
-      height: 300px;
-      position: absolute;
-      top: 150px
-    }
-
-    /* white circle */
-    .flag > div > div {
-      background-color: white;
-      width: 200px;
-      height: 200px;
-      border-radius: 50%;
-      position: absolute;
-      top: 50px;
-      left: 350px
-    }
-
-    p {
-      margin: 0px;
-      font-size: 5rem;
-      text-align: center;
-      color: white;
-    }
-
-    .flag > div > div > p {
-      color: black;
-    }
-    
-  </style>
+    <meta charset="UTF-8">
+    <title>CSS Flag Project</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <!-- 
-  IMPORTANT! Do not change any HTML
-Don't add any classes/ids/elements 
-Use all possible tags about combining selectors 
-and CSS specificity instead.
 Hint 1: The flag is 900px by 600px and the circle is 200px by 200px.
-Hint 2: use CSS inspection to get the colors from
+Hint 2: You can use CSS inspection to get the colors from
 https://appbrewery.github.io/flag-of-laos/
 -->
 
+<!-- more flags: http://lascarid.es/fussyflags/ -->
+
 <body>
-  <div class="flag">
-    <p>The Flag</p>
-    <div>
-      <div>
-        <p>of Laos</p>
-      </div>
+    <h1>Flags Gallery</h1>
+    <div class="laos">
+        <p>The Flag</p>
+        <div>
+            <div>
+                <p>of Laos</p>
+            </div>
+        </div>
     </div>
-  </div>
+
+    <div class="japan">
+        <p>The Flag</p>
+        <div>
+            <p>of Japan</p>
+        </div>
+    </div>
+    
+    <div class="peru">
+        <div></div>
+    </div>
+    <h2>Peru</h2>
+
+    <div class="finland">
+        <div class="horizontal"></div>
+        <div class="vertical"></div>
+    </div>
+    <h2>Finland</h2>
+
+    <div class="indonesia">
+        <div></div>
+    </div>
+    <h2>Indonesia</h2>
 </body>
 
 </html>
