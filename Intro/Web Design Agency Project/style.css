@@ -1,7 +1,7 @@
 body {
   font-family: "Poppins", sans-serif;
   margin: 50px 50px 0 50px;
-  background-color: #faf9f6;
+  background-color: #FAF1E6;
   display: flex;
   flex-direction: column;
   min-height: 95vh;
@@ -10,27 +10,17 @@ body {
   flex: 1;
 }
 
-.logo {
-  width: 10rem;
-}
-
 h1 {
-  font-size: 1.5rem;
+  font-size: 5rem;
 }
 
-footer {
-  text-align: right;
-  color: midnightblue;
-}
-
-.tile-image {
-  height: 200px;
-  float: left;
-  margin-right: 50px;
+.highlight {
+  color: #27548A;
 }
 
 .card {
   width: 45%;
+  display: flex;
 }
 
 .left {
@@ -41,32 +31,46 @@ footer {
   float: right;
 }
 
-.creative {
+.tile-image {
+  width: 300px;
+  float: left;
+  margin-right: 50px;
+}
+
+footer {
+  text-align: right;
   color: midnightblue;
 }
 
-@media (min-width: 680px) {
+/* 
+Mobile: 319px — 480px 
+Tablets: 481px — 1200px 
+Laptops: 1201px — 1600px 
+Desktops: 1601px and more 
+*/
+
+@media (max-width: 1200px) {
   .logo {
-    width: 13rem;
+    width: 100px;
   }
 
   h1 {
-    font-size: 3.5rem;
+    font-size: 3rem;
     text-align: center;
   }
 
   .card {
     width: 100%;
     display: block;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     text-align: justify;
   }
 
   .card img {
-    margin-bottom: 10px;
     width: 100%;
     display: inline;
+    margin-bottom: 30px;
     object-fit: cover;
   }
-}
 
+}
