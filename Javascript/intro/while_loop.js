@@ -1,36 +1,21 @@
-function beer() {
-    var numberOfBottles = 99;
-    var count = 0;
-    
-    var bottleWord = "bottles";
-    if (numberOfBottles === 1) {
-        bottleWord = "bottle"
-    }
-
+function beer () {
+    let numberOfBottles = 99;
+    let bottleWord = "bottles";
     while (numberOfBottles > 0) {
-        process.stdout.write(numberOfBottles + " " + bottleWord + " of beer on the wall, ");
-        process.stdout.write(numberOfBottles + " " + bottleWord + " of beer. Take 1 down, pass it around, ");
+        process.stdout.write(`${numberOfBottles} ${bottleWord} of beer on the wall. `);
+        process.stdout.write(`${numberOfBottles} ${bottleWord} of beer. `);
+        process.stdout.write("Take 1 down, pass it around. ");
         
-        numberOfBottles --;
-        count ++;
+        numberOfBottles--;
         if (numberOfBottles === 1) {
-            bottleWord = "bottle"
+            bottleWord = "bottle";
+        }else if (numberOfBottles === 0) {
+            break;
         }
-
-        if (numberOfBottles === 0) {
-            console.log("no more " + bottleWord + " of beer on the wall.");
-        }else {
-            console.log(numberOfBottles + " " + bottleWord + " of beer on the wall.");
-        }
-
+        console.log(`${numberOfBottles} ${bottleWord} of beer on the wall`);
     }
 
-    if (count > 1) {
-        bottleWord = "bottles";
-    }else {
-        bottleWord = "bottle";
-    }
-    console.log("No more bottles of beer on the wall, no more bottles of beer. Go to the store and buy some more, " + count + " " + bottleWord + " of beer on the wall.")
+    console.log("No more bottles of beer on the wall.")
 }
 
 beer();

@@ -1,14 +1,14 @@
-function fibonacciGenerator(n) {
-    var output = [];
-    for (var i = 0; i < n; i++) {
-        if (i <= 1) {
+function fibonacciGenerator(length) {
+    let output = [];
+    for (var i = 0; i < length; i++) {
+        if (i === 0 || i === 1) {
             output.push(i);
         }else {
-            output.push(output[output.length - 2] + output[output.length - 1]);
+            output.push(output[i - 2] + output[i - 1]);
         }
     }
     return output;
 }
 
-var fibonacci = fibonacciGenerator(10);
+let fibonacci = fibonacciGenerator(10);
 console.log(fibonacci);

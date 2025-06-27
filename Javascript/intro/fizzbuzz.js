@@ -1,20 +1,20 @@
-var output = [];
-var number = 1;
+let array = [];
+let count = 1;
 
 function fizzBuzz() {
-    while (number < 100) {
-        if (number % 3 === 0 && number % 5 === 0) {
-            output.push('FizzBuzz');
-        }else if (number % 3 === 0) {
-            output.push('Fizz');
-        }else if (number % 5 === 0) {
-            output.push('Buzz');
+    while (count < 100) {
+        if (count % 3 === 0 && count % 5 === 0) {
+            array.push("FizzBuzz");
+        }else if (count % 3 === 0) {
+            array.push("Fizz");
+        }else if (count % 5 === 0) {
+            array.push("Buzz");
         }else {
-            output.push(number);
+            array.push(count)
         }
-        number ++;
+        count++;
     }
-    console.log(output);
+    console.log(array);
 }
 
-fizzBuzz()
+fizzBuzz();
