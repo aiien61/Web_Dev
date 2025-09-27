@@ -15,3 +15,12 @@ demo3.html
 demo4.html
 config.js
 *.env
+.DS_Store
+*.exe
+.Trashes
+Secrets/
+Secret/
+secrets/
+secret/
+*.zip
+*.log
