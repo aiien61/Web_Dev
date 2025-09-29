@@ -1,0 +1,13 @@
+CREATE TABLE users(
+	id SERIAL PRIMARY KEY,
+	email VARCHAR(100) UNIQUE,
+	password VARCHAR(100)
+);
+
+ALTER TABLE users
+	ALTER COLUMN email SET NOT NULL;
+	
+ALTER TABLE users
+	ADD COLUMN secret TEXT;
+
+SELECT * FROM users;
